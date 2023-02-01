@@ -2,7 +2,7 @@
   import { Link } from 'svelte-routing';
   import { onMount } from 'svelte';
 
-  const providers = ['twitter', 'github', 'aad'];
+  const providers = [{text: 'Twitter', value: 'twitter'}, {text: 'Github', value: 'github'}, {text: 'Azure Active Record', value: 'aad'}];
   const redirect = window.location.pathname;
   let userInfo = undefined;
 
@@ -43,8 +43,8 @@
     <div class="menu-list auth">
       {#if !userInfo}
         {#each providers as provider (provider)}
-          <a href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
-            {provider}
+          <a href={`/.auth/login/${provider.value}?post_login_redirect_uri=${redirect}`}>
+            {provider.text}
           </a>
         {/each}
       {/if}
