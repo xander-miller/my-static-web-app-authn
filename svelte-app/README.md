@@ -30,6 +30,13 @@ This project was created to help represent a fundamental app written with Svelte
 
 ## Resources
 
+- How to [Set up local development for Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/local-development)
+
+1. Command to start the proxy server
+   ```bash
+   swa start http://localhost:<DEV-SERVER-PORT-NUMBER> --api-location http://localhost:7071
+   ```
+
 ### Azure Static Web Apps
 
 - Learn how to [Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api?wt.mc_id=mslearn_staticwebapp-github-jopapa)
