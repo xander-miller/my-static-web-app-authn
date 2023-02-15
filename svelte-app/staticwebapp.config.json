@@ -24,7 +24,7 @@
           },
           "login": {
             "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
-            "scopes": ["bonjour_person","bonjour_student","bonjour_org","bonjour_schools"],
+            "scopes": ["email", "profile"],
             "loginParameterNames": []
           }
         }
