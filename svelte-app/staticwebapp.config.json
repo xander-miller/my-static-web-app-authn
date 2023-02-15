@@ -8,5 +8,27 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["*.{css,scss,js,png,gif,ico,jpg,svg}"]
+  },
+  "auth": {
+    "identityProviders": {
+      "customOpenIdConnectProviders": {
+        "bonjour": {
+          "registration": {
+            "clientIdSettingName": "BONJOUR_CLIENT_ID",
+            "clientCredential": {
+              "clientSecretSettingName": "BONJOUR_CLIENT_SECRET"
+            },
+            "openIdConnectConfiguration": {
+              "wellKnownOpenIdConfiguration": "https://bonjour-staging.cforp.io/.well-known/openid-configuration"
+            }
+          },
+          "login": {
+            "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+            "scopes": ["bonjour_person","bonjour_student","bonjour_org","bonjour_schools"],
+            "loginParameterNames": []
+          }
+        }
+      }
+    }
   }
 }

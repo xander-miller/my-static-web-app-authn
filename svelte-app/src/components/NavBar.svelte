@@ -2,7 +2,7 @@
   import { Link } from 'svelte-routing';
   import { onMount } from 'svelte';
 
-  const providers = [{text: 'Twitter', value: 'twitter'}, {text: 'Github', value: 'github'}, {text: 'Azure Active Record', value: 'aad'}];
+  const providers = [{text: 'Twitter', value: 'twitter'}, {text: 'Github', value: 'github'}, {text: 'Azure Active Record', value: 'aad'}, {text: 'Bonjour Staging', value: 'bonjour'}];
   const redirect = window.location.pathname;
   let userInfo = undefined;
 
