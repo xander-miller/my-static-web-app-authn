@@ -27,6 +27,25 @@
             "scopes": ["email", "profile"],
             "loginParameterNames": []
           }
+        },
+        "github": {
+          "registration": {
+            "clientIdSettingName": "GITHUB_CLIENT_ID",
+            "clientSecretSettingName": "GITHUB_CLIENT_SECRET"
+          }
+        },
+        "twitter": {
+          "registration": {
+            "consumerKeySettingName": "TWITTER_CONSUMER_KEY",
+            "consumerSecretSettingName": "TWITTER_CONSUMER_SECRET"
+          }
+        },
+        "azureActiveDirectory": {
+          "registration": {
+            "openIdIssuer": "https://login.microsoftonline.com/<TENANT_ID>/v2.0",
+            "clientIdSettingName": "AZURE_CLIENT_ID",
+            "clientSecretSettingName": "AZURE_CLIENT_SECRET"
+          }
         }
       }
     }
