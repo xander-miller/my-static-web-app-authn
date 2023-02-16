@@ -48,7 +48,7 @@
           </a>
         {/each}
       {/if}
-      {#if userInfo}
+      {#if true}
         <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>
           Logout
         </a>
